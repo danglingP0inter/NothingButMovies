@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="182" id="KGk-i7-Jjw" customClass="MoviesTVCell" customModule="Nothing_but_Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="182"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5wb-4K-hba">
+                        <rect key="frame" x="10" y="0.5" width="120" height="181"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="Qy4-Gg-X7u"/>
+                        </constraints>
+                        <imageReference key="image" image="music.note" catalog="system" renderingMode="original"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="American Pie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW4-dv-BDT">
+                        <rect key="frame" x="140" y="10" width="235" height="21.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh9-y0-MTR">
+                        <rect key="frame" x="140" y="41.5" width="235" height="130.5"/>
+                        <string key="text">iOS 11 introduced a new design for navigation bar titles, allowing developers to enable large titles for view controllers that needed to be particularly prominent.
+
+By default these large titles are disabled, but you can enable them with one line of code in your navigation controller’s top view controller:</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="RW4-dv-BDT" secondAttribute="trailing" constant="10" id="43b-jZ-vVJ"/>
+                    <constraint firstItem="5wb-4K-hba" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9LN-OF-8IH"/>
+                    <constraint firstAttribute="bottom" secondItem="Jh9-y0-MTR" secondAttribute="bottom" constant="10" id="HyH-Ws-luu"/>
+                    <constraint firstItem="Jh9-y0-MTR" firstAttribute="leading" secondItem="5wb-4K-hba" secondAttribute="trailing" constant="10" id="LWd-bF-Xt4"/>
+                    <constraint firstItem="RW4-dv-BDT" firstAttribute="leading" secondItem="5wb-4K-hba" secondAttribute="trailing" constant="10" id="Rx6-M7-0WJ"/>
+                    <constraint firstItem="RW4-dv-BDT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="YQH-PI-pvW"/>
+                    <constraint firstAttribute="bottom" secondItem="5wb-4K-hba" secondAttribute="bottom" id="i63-p1-vgv"/>
+                    <constraint firstItem="5wb-4K-hba" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rag-yp-jgP"/>
+                    <constraint firstAttribute="trailing" secondItem="Jh9-y0-MTR" secondAttribute="trailing" constant="10" id="vos-0B-BKA"/>
+                    <constraint firstItem="Jh9-y0-MTR" firstAttribute="top" secondItem="RW4-dv-BDT" secondAttribute="bottom" constant="10" id="wzP-IQ-Yzf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieImageView" destination="5wb-4K-hba" id="6BF-S8-5OA"/>
+                <outlet property="summaryLabel" destination="Jh9-y0-MTR" id="faI-L3-ITk"/>
+                <outlet property="titleLabel" destination="RW4-dv-BDT" id="ASy-tY-UfY"/>
+            </connections>
+            <point key="canvasLocation" x="190.57971014492756" y="141.29464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="music.note" catalog="system" width="97" height="128"/>
+    </resources>
+</document>
