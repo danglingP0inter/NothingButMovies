@@ -13,7 +13,7 @@ This project follows MVVM architecture.
  - **Movie Details Page** - Shows the movie details like title, tagline, runtime, genre, language etc. User can also share and add/remove the movie from favourites on this page. Movies marked as favourites are saved in Document Directory (Cache) folder. Movies marked as favorites can be viewed under "Favourites" tab.
  -   **Search Tab** - User can search for a movie and can go to details page on tap of a search result item. The concept of throttling has been used here to avoid cluttering the network requests.
  - **Share** - User can share a movie by clicking on top right button on movie details page. It shares a deeplink corresponding to that movie. This deeplink has been used to directly navigate to that specific movie detail page.
- - **Caching ** - Movie posters are cached using NSCache and items marked as favourites are cached in document cache folder.
+ - **Caching** - Movie posters are cached using NSCache and items marked as favourites are cached in document cache folder.
  - **View Model** - As this project follows MVVM architecture, each view controller has a view model that has the responsibility of data manipulation to be presented on view and making the network/cached data request.
 
 ## Features Not Implemented
